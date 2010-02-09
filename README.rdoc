@@ -24,4 +24,4 @@ That's it. Have fun!
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-Copyright (c) 2010 Martin Gamsjaeger (snusnu). See {LICENSE}[http://github.com/snusnu/rails-templates/raw/master/LICENSE] for details.
+Copyright (c) 2010 Martin Gamsjaeger (snusnu). See {LICENSE}[http://github.com/snusnu/rails-templates/blob/master/LICENSE] for details.
