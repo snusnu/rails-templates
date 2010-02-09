@@ -1,0 +1,27 @@
+== rails-templates
+
+This is a collection of rails application templates that are designed to get a rails application with datamapper up and running quickly. Currently, these templates are only compatible with rails3.
+
+If you have rails3 installed on your system, creating a datamapper app on rails3 is as easy as issuing one command. The following shows the two options you currently have. You can either install an application using rails master branch, or you can choose to rely on the rails-3.0.0.beta gem instead.
+
+  rails dm_rails3_app -m http://github.com/snusnu/rails_templates/blob/master/dm_rails-3.0.0.beta.rb
+  rails dm_rails3_app -m http://github.com/snusnu/rails_templates/blob/master/dm_rails-master.rb
+
+If you don't have rails3 installed, the following should get you going.
+
+  gem install i18n tzinfo builder memcache-client rack rack-test rack-mount erubis mail text-format thor bundler
+  gem install rails --pre
+
+That's it. Have fun!
+
+== Note on Patches/Pull Requests
+
+* Fork the project.
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so I don't break it in a
+  future version unintentionally.
+* Commit, do not mess with rakefile, version, or history.
+  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+* Send me a pull request. Bonus points for topic branches.
+
+Copyright (c) 2010 Martin Gamsjaeger (snusnu). See {LICENSE}[http://github.com/snusnu/rails-templates/blob/master/LICENSE] for details.
