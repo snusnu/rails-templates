@@ -7,4 +7,4 @@ run 'bundle install vendor'
 
 apply 'http://github.com/snusnu/rails-templates/raw/master/rspec.rb'
 
-run 'script/rails server'
+run 'vendor/bin/rails server'
