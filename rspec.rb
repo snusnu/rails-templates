@@ -3,10 +3,6 @@ apply 'http://github.com/snusnu/rails-templates/raw/rspec/rspec_master_gemfile.r
 
 run('bundle install vendor')
 
-require 'bundler'
-Bundler.setup
-Bundler.require(:test)
-
 run('vendor/bin/rails generate rspec:install')
 
 apply 'http://github.com/snusnu/rails-templates/raw/rspec/sample_scaffold.rb'
