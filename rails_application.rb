@@ -5,6 +5,6 @@ apply 'http://github.com/snusnu/rails-templates/raw/master/database.yml.rb'
 
 run 'bundle install vendor'
 
-apply 'http://github.com/snusnu/rails-templates/raw/master/sample_scaffold.rb'
+apply 'http://github.com/snusnu/rails-templates/raw/master/rspec.rb'
 
 run 'script/rails server'
