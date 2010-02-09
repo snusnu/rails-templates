@@ -19,6 +19,5 @@ run('script/rails generate rspec:install')
 
 apply 'http://github.com/snusnu/rails-templates/raw/master/sample_scaffold.rb'
 
-run('vendor/bin/rake db:automigrate')
 run('rspec spec')
 run('vendor/bin/rake spec')
