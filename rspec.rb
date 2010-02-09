@@ -6,11 +6,13 @@ git 'git://github.com/rspec/rspec-expectations.git'
 git 'git://github.com/rspec/rspec-mocks.git'
 git 'git://github.com/rspec/rspec-rails.git'
 
-gem 'rspec'
-gem 'rspec-core'
-gem 'rspec-expectations'
-gem 'rspec-mocks'
-gem 'rspec-rails'
+group(:test) do
+  gem 'rspec'
+  gem 'rspec-core'
+  gem 'rspec-expectations'
+  gem 'rspec-mocks'
+  gem 'rspec-rails'
+end
 GEMFILE
 
 run('bundle install vendor')
