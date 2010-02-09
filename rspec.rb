@@ -15,7 +15,7 @@ GEMFILE
 
 run('bundle install vendor')
 
-run('script/rails generate rspec:install')
+run('vendor/bin/rails generate rspec:install')
 
 apply 'http://github.com/snusnu/rails-templates/raw/rspec/sample_scaffold.rb'
 
