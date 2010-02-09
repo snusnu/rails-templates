@@ -17,7 +17,7 @@ run('bundle install vendor')
 
 run('script/rails generate rspec:install')
 
-apply 'http://github.com/snusnu/rails-templates/raw/master/sample_scaffold.rb'
+apply 'http://github.com/snusnu/rails-templates/raw/rspec/sample_scaffold.rb'
 
 run('rspec spec')
 run('vendor/bin/rake spec')
