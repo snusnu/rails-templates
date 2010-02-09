@@ -1,4 +1,4 @@
-append 'Gemfile', <<-GEMFILE
+append_file 'Gemfile', <<-GEMFILE
 
 git 'git://github.com/rspec/rspec.git'
 git 'git://github.com/rspec/rspec-core.git'
