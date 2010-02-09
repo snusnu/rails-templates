@@ -4,8 +4,8 @@ This is a collection of rails application templates that are designed to get a r
 
 If you have rails3 installed on your system, creating a datamapper app on rails3 is as easy as issuing one command. The following shows the two options you currently have. You can either install an application using rails master branch, or you can choose to rely on the rails-3.0.0.beta gem instead.
 
-  rails dm_rails3_app -m http://github.com/snusnu/rails_templates/blob/master/dm_rails-3.0.0.beta.rb
-  rails dm_rails3_app -m http://github.com/snusnu/rails_templates/blob/master/dm_rails-master.rb
+  rails dm_rails3_app -m http://github.com/snusnu/rails_templates/raw/master/dm_rails-3.0.0.beta.rb
+  rails dm_rails3_app -m http://github.com/snusnu/rails_templates/raw/master/dm_rails-master.rb
 
 If you don't have rails3 installed, the following should get you going.
 
@@ -24,4 +24,4 @@ That's it. Have fun!
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-Copyright (c) 2010 Martin Gamsjaeger (snusnu). See {LICENSE}[http://github.com/snusnu/rails-templates/blob/master/LICENSE] for details.
+Copyright (c) 2010 Martin Gamsjaeger (snusnu). See {LICENSE}[http://github.com/snusnu/rails-templates/raw/master/LICENSE] for details.
