@@ -7,7 +7,7 @@ git 'git://github.com/rails/rails.git'
 
 git 'git://github.com/snusnu/dm-core.git', 'branch' => 'active_support'
 git "git://github.com/snusnu/dm-more.git", 'branch' => 'active_support'
-git 'git://github.com/snusnu/rails3_datamapper.git', 'branch' => 'cherry_pick_rails'
+git 'git://github.com/dkubb/rails3_datamapper.git'
 
 gem 'activesupport', :require => 'active_support'
 gem 'activemodel',   :require => 'active_model'
