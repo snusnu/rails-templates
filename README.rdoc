@@ -25,7 +25,7 @@ This enables a complete development environment on top pf sinatra simply by runn
   bundle install
   bundle exec ruby dev_server.rb
 
-Once the dev server is running, use al local URL when testing the app generation. All files in the project directory a served by sinatra.
+Once the dev server is running, use al local URL when testing the app generation. All files in the project directory are served by sinatra.
 
   rails dm_rails3_app -m http://localhost:4567/dm_rails_master.rb
 
