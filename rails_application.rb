@@ -8,12 +8,7 @@ run 'bundle install'
 run 'rails generate rspec:install'
 run 'rails generate scaffold Person name:string'
 
-append_file 'spec/spec_helper.rb' do
-<<-RUBY
-
-DataMapper.auto_migrate!
-RUBY
-end
+apply 'http://github.com/snusnu/rails-templates/raw/rspec/spec_helper.rb'
 
 run 'rake spec --trace'
 
