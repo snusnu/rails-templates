@@ -6,10 +6,9 @@ apply 'http://github.com/snusnu/rails-templates/raw/rspec/database.yml.rb'
 run 'bundle install'
 
 run 'rails generate rspec:install'
-
-run 'rake db:create'
 run 'rails generate scaffold Person name:string'
-run 'rake db:automigrate'
+
+append_file 'spec/spec_helper', '\nDataMapper.auto_migrate!\n'
 
 run 'rake spec --trace'
 
