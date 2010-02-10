@@ -8,7 +8,7 @@ defaults: &defaults
   adapter: sqlite3
 
 development:
-  database: :memory:
+  database: ":memory:"
   <<: *defaults
 
   # Add more repositories
@@ -23,10 +23,10 @@ development:
   #     ...
 
 test:
-  database: :memory:
+  database: ":memory:"
   <<: *defaults
 production:
-  database: :memory:
+  database: ":memory:"
   <<: *defaults
 YAML
 end
