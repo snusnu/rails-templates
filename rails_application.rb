@@ -5,6 +5,20 @@ apply 'http://github.com/snusnu/rails-templates/raw/rspec/database.yml.rb'
 
 run 'bundle install'
 
-apply 'http://github.com/snusnu/rails-templates/raw/rspec/rspec.rb'
+run 'rails generate rspec:install'
+
+run 'rake db:create'
+run 'rails generate scaffold Person name:string'
+run 'rake db:automigrate'
+
+run 'rake spec --trace'
+
+run 'bundle lock'
+
+say ''
+say '--------------------------------------------------------------------------'
+say 'After the sever booted, point your browser at http://localhost:3000/people'
+say '--------------------------------------------------------------------------'
+say ''
 
 run 'rails server'
