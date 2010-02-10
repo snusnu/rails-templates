@@ -9,6 +9,6 @@ require 'rails3_datamapper/railtie'
 RUBY
 end
 
-gsub_file 'config/application.rb', /#{config.action_mailer.raise_delivery_errors = false}/ do
+gsub_file 'config/application.rb', /config.action_mailer.raise_delivery_errors = false/ do
   "# config.action_mailer.raise_delivery_errors = false"
 end
