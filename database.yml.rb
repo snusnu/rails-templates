@@ -8,7 +8,7 @@ defaults: &defaults
   adapter: sqlite3
 
 development:
-  database: dm_rails3_app_development.rb
+  database: dm_rails3_app_development.db
   <<: *defaults
 
   # Add more repositories
@@ -23,10 +23,10 @@ development:
   #     ...
 
 test:
-  database: dm_rails3_app_test.rb
+  database: dm_rails3_app_test.db
   <<: *defaults
 production:
-  database: dm_rails3_app_production.rb
+  database: dm_rails3_app_production.db
   <<: *defaults
 YAML
 end
