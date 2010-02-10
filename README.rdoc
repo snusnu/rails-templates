@@ -14,6 +14,23 @@ If you don't have rails3 installed, the following should get you going.
 
 That's it. Have fun!
 
+== Developing and testing rails-templates
+
+The project includes a Gemfile that contains one single line of code:
+
+  gem 'sinatra', '~> 1.0a', :git => 'git://github.com/sinatra/sinatra.git'
+
+This enables a complete development environment on top pf sinatra simply by running
+
+  bundle install
+  bundle exec ruby dev_server.rb
+
+Once the dev server is running, use al local URL when testing the app generation. All files in the project directory a served by sinatra.
+
+  rails dm_rails3_app -m http://localhost:4567/dm_rails_master.rb
+
+The sinatra service simply replaces the github URLs with local ones, thus allowing to test the application template without constantly pushing fixes to github. This got annoying.
+
 == Note on Patches/Pull Requests
 
 * Fork the project.
