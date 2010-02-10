@@ -19,6 +19,19 @@ gem 'railties',          '~> 3.0.0.beta1', :require => 'rails'
 gem 'data_objects',      '~> 0.10.1'
 gem 'do_sqlite3',        '~> 0.10.1'
 
+# You can use any of the other available database adapters.
+# This is only a small excerpt of the list of all available adapters
+# Have a look at
+#
+#  http://wiki.github.com/datamapper/dm-core/adapters
+#  http://wiki.github.com/datamapper/dm-core/community-plugins
+#
+# for a rather complete list of available datamapper adapters and plugins
+
+# gem 'do_mysql',          '~> 0.10.1'
+# gem 'do_postgres',       '~> 0.10.1'
+# gem 'do_oracle',         '~> 0.10.1'
+
 git 'git://github.com/snusnu/dm-core.git', 'branch' => 'active_support'
 git "git://github.com/snusnu/dm-more.git", 'branch' => 'active_support'
 
