@@ -7,14 +7,21 @@ If you have rails3 installed on your system, creating a datamapper app on rails3
   rails dm_rails3_app -m http://github.com/snusnu/rails-templates/raw/master/dm_rails-3.0.0.beta.rb
   rails dm_rails3_app -m http://github.com/snusnu/rails-templates/raw/master/dm_rails_master.rb
 
-Currently if you want to use {rspec-rails}[http:github.com/rspec/rspec-rails] you need to use the rails master Gemfile.
-
 If you don't have rails3 installed, the following should get you going.
 
   gem install i18n tzinfo builder memcache-client rack rack-test rack-mount erubis mail text-format thor bundler
   gem install rails --pre
 
 That's it. Have fun!
+
+== rspec support
+
+Currently, if you want to use {rspec-rails}[http:github.com/rspec/rspec-rails] you need to use the rails master Gemfile.
+
+  rails dm_rails3_app -m http://github.com/snusnu/rails-templates/raw/master/dm_rails_master.rb
+
+This will bundle everything from master, create the application, run specs on your scaffold and start the server.
+
 
 == Developing and testing rails-templates
 
@@ -32,6 +39,7 @@ Once the dev server is running, use al local URL when testing the app generation
   rails dm_rails3_app -m http://localhost:4567/dm_rails_master.rb
 
 The sinatra service simply replaces the github URLs with local ones, thus allowing to test the application template without constantly pushing fixes to github. This got annoying.
+
 
 == Note on Patches/Pull Requests
 
