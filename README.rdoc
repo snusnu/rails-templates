@@ -14,6 +14,10 @@ If you don't have rails3 installed, the following should get you going.
 
 That's it. Have fun!
 
+== rspec support
+
+Currently, experimental rspec support is available in the {rspec branch}[http://github.com/snusnu/rails-templates/tree/rspec]. Please try it out and report any issues and suggestions on what can be improved. Have a look at the README again, since the application template URLs differ from the ones in the master branch. Also note, that rspec support is currently only available when creating a rails master application.
+
 == Note on Patches/Pull Requests
 
 * Fork the project.
