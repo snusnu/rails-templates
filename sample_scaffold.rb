@@ -1,6 +1,6 @@
-run 'vendor/bin/rake db:create'
-run 'vendor/bin/rails generate scaffold Person name:string'
-run 'vendor/bin/rake db:automigrate'
+run 'rake db:create'
+run 'rails generate scaffold Person name:string'
+run 'rake db:automigrate'
 
 say ''
 say '--------------------------------------------------------------------------'
