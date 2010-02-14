@@ -18,7 +18,7 @@ Rspec::Core.configure do |config|
   require 'rspec/expectations'
   config.include Rspec::Matchers
 
-  config.before(:suite) { DataMapper.auto_migrate! }
+  config.before(:all) { DataMapper.auto_migrate! }
 
   # == Mock Framework
   #
