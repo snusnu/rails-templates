@@ -55,11 +55,11 @@ git 'git://github.com/rspec/rspec-mocks.git'
 git 'git://github.com/rspec/rspec-rails.git'
 
 group(:test) do
-  gem 'rspec',              '2.0.0.a5'
-  gem 'rspec-core',         '2.0.0.a5', :require => 'rspec/core'
-  gem 'rspec-expectations', '2.0.0.a5', :require => 'rspec/expectations'
-  gem 'rspec-mocks',        '2.0.0.a5', :require => 'rspec/mocks'
-  gem 'rspec-rails',        '2.0.0.a6'
+  gem 'rspec',              '2.0.0.a6'
+  gem 'rspec-core',         '2.0.0.a6', :require => 'rspec/core'
+  gem 'rspec-expectations', '2.0.0.a6', :require => 'rspec/expectations'
+  gem 'rspec-mocks',        '2.0.0.a6', :require => 'rspec/mocks'
+  gem 'rspec-rails',        '2.0.0.a7'
 end
 GEMFILE
 end
