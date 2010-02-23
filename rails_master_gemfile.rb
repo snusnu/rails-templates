@@ -42,7 +42,7 @@ gem 'dm-observer',       '~> 0.10.2'
 
 git 'git://github.com/datamapper/dm-rails.git'
 
-gem 'rails3_datamapper', '~> 0.10.2'
+gem 'dm-rails', '~> 0.10.2'
 
 git 'git://github.com/rspec/rspec.git'
 git 'git://github.com/rspec/rspec-core.git'
