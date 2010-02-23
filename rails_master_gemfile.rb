@@ -40,7 +40,7 @@ gem 'dm-timestamps',     '~> 0.10.2'
 gem 'dm-migrations',     '~> 0.10.2'
 gem 'dm-observer',       '~> 0.10.2'
 
-git 'git://github.com/dkubb/rails3_datamapper.git'
+git 'git://github.com/datamapper/dm-rails.git'
 
 gem 'rails3_datamapper', '~> 0.10.2'
 
