@@ -3,10 +3,6 @@ create_file 'Gemfile' do
 <<-GEMFILE
 source 'http://gemcutter.org'
 
-git 'git://github.com/carlhuda/bundler.git'
-
-gem 'bundler',           '~> 0.9.3'
-
 git 'git://github.com/rails/rails.git'
 
 gem 'activesupport',     '~> 3.0.0.beta1', :require => 'active_support'
@@ -55,11 +51,11 @@ git 'git://github.com/rspec/rspec-mocks.git'
 git 'git://github.com/rspec/rspec-rails.git'
 
 group(:test) do
-  gem 'rspec',              '2.0.0.a6'
-  gem 'rspec-core',         '2.0.0.a6', :require => 'rspec/core'
-  gem 'rspec-expectations', '2.0.0.a6', :require => 'rspec/expectations'
-  gem 'rspec-mocks',        '2.0.0.a6', :require => 'rspec/mocks'
-  gem 'rspec-rails',        '2.0.0.a7'
+  gem 'rspec',              '2.0.0.a8'
+  gem 'rspec-core',         '2.0.0.a8', :require => 'rspec/core'
+  gem 'rspec-expectations', '2.0.0.a8', :require => 'rspec/expectations'
+  gem 'rspec-mocks',        '2.0.0.a8', :require => 'rspec/mocks'
+  gem 'rspec-rails',        '2.0.0.a9'
 end
 GEMFILE
 end
