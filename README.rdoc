@@ -2,26 +2,20 @@
 
 This is a collection of rails application templates that are designed to get a rails application with datamapper up and running quickly. Currently, these templates are only compatible with rails3.
 
-If you have rails3 installed on your system, creating a datamapper app on rails3 is as easy as issuing one command. The following shows the two options you currently have. You can either install an application using rails master branch, or you can choose to rely on the rails-3.0.0.beta gem instead.
+If you have rails3 installed on your system, creating a datamapper app on rails3 is as easy as issuing one command.
 
-  rails dm_rails3_app -m http://github.com/snusnu/rails-templates/raw/master/dm_rails-3.0.0.beta.rb
   rails dm_rails3_app -m http://github.com/snusnu/rails-templates/raw/master/dm_rails_master.rb
 
 If you don't have rails3 installed, the following should get you going.
 
-  gem install i18n tzinfo builder memcache-client rack rack-test rack-mount erubis mail text-format thor bundler
+  gem update --system # We need rubygems-1.3.6 for the command below to work
   gem install rails --pre
 
 That's it. Have fun!
 
 == rspec support
 
-Currently, if you want to use {rspec-rails}[http:github.com/rspec/rspec-rails] you need to use the rails master Gemfile.
-
-  rails dm_rails3_app -m http://github.com/snusnu/rails-templates/raw/master/dm_rails_master.rb
-
-This will bundle everything from master, create the application, run specs on your scaffold and start the server.
-
+Currently, {rspec-rails}[http:github.com/rspec/rspec-rails] isn't yet fully compatible with rails3 and not yet completely ORM agnostic. Preliminary support is available though.
 
 == Developing and testing rails-templates
 
