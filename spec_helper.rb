@@ -11,6 +11,13 @@ require 'rspec/rails'
 # in ./support/ and its subdirectories.
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 
+# Work around rspec not yet being ORM agnostic
+DataMapper::Resource.module_eval do
+  def has_attribute?(attribute)
+    attributes.include?(attribute)
+  end
+end
+
 Rspec.configure do |config|
 
   # Remove this line if you don't want Rspec's should and should_not
