@@ -5,6 +5,22 @@ apply 'http://github.com/snusnu/rails-templates/raw/master/database.yml.rb'
 
 run 'bundle install'
 
+initializer 'jruby_monkey_patch.rb', <<-CODE
+if RUBY_PLATFORM =~ /java/
+  # ignore the anchor to allow this to work with jruby:
+  # http://jira.codehaus.org/browse/JRUBY-4649
+  class Rack::Mount::Strexp
+
+    class << self
+      alias :compile_old :compile
+      def compile(str, requirements, separators, anchor)
+        self.compile_old(str, requirements, separators)
+      end
+    end
+  end
+end
+CODE
+
 run 'rails generate rspec:install'
 run 'rails generate scaffold Person name:string'
 
