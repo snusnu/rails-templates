@@ -9,6 +9,7 @@ If you have rails3 installed on your system, creating a datamapper app on rails3
 If you don't have rails3 installed, the following should get you going.
 
   gem update --system # We need rubygems-1.3.6 for the command below to work
+  gem install rails3b
   gem install rails --pre
 
 That's it. Have fun!
