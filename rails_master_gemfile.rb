@@ -28,17 +28,17 @@ gem 'do_sqlite3',        '~> 0.10.1'
 # gem 'do_postgres',       '~> 0.10.1'
 # gem 'do_oracle',         '~> 0.10.1'
 
-git 'git://github.com/snusnu/dm-core.git', 'branch' => 'active_support'
-git "git://github.com/snusnu/dm-more.git", 'branch' => 'active_support'
+gem 'dm-core',             '~> 0.10.2', :git => 'git://github.com/datamapper/dm-core.git', 'branch' => 'next'
 
-gem 'dm-core',           '~> 0.10.2'
-gem 'dm-types',          '~> 0.10.2'
-gem 'dm-validations',    '~> 0.10.2'
-gem 'dm-constraints',    '~> 0.10.2'
-gem 'dm-aggregates',     '~> 0.10.2'
-gem 'dm-timestamps',     '~> 0.10.2'
-gem 'dm-migrations',     '~> 0.10.2'
-gem 'dm-observer',       '~> 0.10.2'
+git "git://github.com/snusnu/dm-more.git", 'branch' => 'active_support' do
+  gem 'dm-types',          '~> 0.10.2'
+  gem 'dm-validations',    '~> 0.10.2'
+  gem 'dm-constraints',    '~> 0.10.2'
+  gem 'dm-aggregates',     '~> 0.10.2'
+  gem 'dm-timestamps',     '~> 0.10.2'
+  gem 'dm-migrations',     '~> 0.10.2'
+  gem 'dm-observer',       '~> 0.10.2'
+end
 
 git 'git://github.com/datamapper/dm-rails.git'
 
