@@ -30,7 +30,7 @@ gem 'do_sqlite3',        '~> 0.10.1'
 
 gem 'dm-core',             '~> 0.10.2', :git => 'git://github.com/datamapper/dm-core.git', 'branch' => 'next'
 
-git "git://github.com/snusnu/dm-more.git", 'branch' => 'active_support' do
+git "git://github.com/datamapper/dm-more.git", 'branch' => 'next' do
   gem 'dm-types',          '~> 0.10.2'
   gem 'dm-validations',    '~> 0.10.2'
   gem 'dm-constraints',    '~> 0.10.2'
