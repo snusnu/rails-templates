@@ -40,8 +40,10 @@ git "git://github.com/datamapper/dm-more.git" do
   gem 'dm-observer',       '~> 0.10.2'
 end
 
-git 'git://github.com/datamapper/dm-rails.git'
+git 'git://github.com/datamapper/dm-transactions.git'
+gem 'dm-transactions', '~> 0.10.2'
 
+git 'git://github.com/datamapper/dm-rails.git'
 gem 'dm-rails', '~> 0.10.2'
 
 git 'git://github.com/rspec/rspec.git'
