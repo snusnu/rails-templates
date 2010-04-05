@@ -26,28 +26,24 @@ gem 'do_sqlite3',           '~> 0.10.1'
 # gem 'do_postgres',          '~> 0.10.1'
 # gem 'do_oracle',            '~> 0.10.1'
 
-datamapper = 'git://github.com/datamapper'
-
-gem 'dm-core',              '~> 0.10.2', :git => "#{datamapper}/dm-core.git"
-gem 'dm-rails',             '~> 0.10.2', :git => "#{datamapper}/dm-rails.git"
-gem 'dm-types',             '~> 0.10.2', :git => "#{datamapper}/dm-types"
-gem 'dm-validations',       '~> 0.10.2', :git => "#{datamapper}/dm-validations"
-gem 'dm-constraints',       '~> 0.10.2', :git => "#{datamapper}/dm-constraints"
-gem 'dm-transactions',      '~> 0.10.2', :git => "#{datamapper}/dm-transactions.git"
-gem 'dm-aggregates',        '~> 0.10.2', :git => "#{datamapper}/dm-aggregates"
-gem 'dm-timestamps',        '~> 0.10.2', :git => "#{datamapper}/dm-timestamps"
-gem 'dm-migrations',        '~> 0.10.2', :git => "#{datamapper}/dm-migrations"
-gem 'dm-observer',          '~> 0.10.2', :git => "#{datamapper}/dm-observer"
+gem 'dm-core',              '~> 0.10.2', :git => "git://github.com/datamapper/dm-core.git"
+gem 'dm-rails',             '~> 0.10.2', :git => "git://github.com/datamapper/dm-rails.git"
+gem 'dm-types',             '~> 0.10.2', :git => "git://github.com/datamapper/dm-types"
+gem 'dm-validations',       '~> 0.10.2', :git => "git://github.com/datamapper/dm-validations"
+gem 'dm-constraints',       '~> 0.10.2', :git => "git://github.com/datamapper/dm-constraints"
+gem 'dm-transactions',      '~> 0.10.2', :git => "git://github.com/datamapper/dm-transactions.git"
+gem 'dm-aggregates',        '~> 0.10.2', :git => "git://github.com/datamapper/dm-aggregates"
+gem 'dm-timestamps',        '~> 0.10.2', :git => "git://github.com/datamapper/dm-timestamps"
+gem 'dm-migrations',        '~> 0.10.2', :git => "git://github.com/datamapper/dm-migrations"
+gem 'dm-observer',          '~> 0.10.2', :git => "git://github.com/datamapper/dm-observer"
 
 group(:test) do
 
-  rspec = 'git://github.com/rspec'
-
-  gem 'rspec',              '2.0.0.beta.5', :git => "#{rspec}/rspec.git"
-  gem 'rspec-core',         '2.0.0.beta.5', :git => "#{rspec}/rspec-core.git",         :require => 'rspec/core'
-  gem 'rspec-expectations', '2.0.0.beta.5', :git => "#{rspec}/rspec-expectations.git", :require => 'rspec/expectations'
-  gem 'rspec-mocks',        '2.0.0.beta.5', :git => "#{rspec}/rspec-mocks.git",        :require => 'rspec/mocks'
-  gem 'rspec-rails',        '2.0.0.beta.5', :git => "#{rspec}/rspec-rails.git"
+  gem 'rspec',              '2.0.0.beta.5', :git => "git://github.com/rspec/rspec.git"
+  gem 'rspec-core',         '2.0.0.beta.5', :git => "git://github.com/rspec/rspec-core.git",         :require => 'rspec/core'
+  gem 'rspec-expectations', '2.0.0.beta.5', :git => "git://github.com/rspec/rspec-expectations.git", :require => 'rspec/expectations'
+  gem 'rspec-mocks',        '2.0.0.beta.5', :git => "git://github.com/rspec/rspec-mocks.git",        :require => 'rspec/mocks'
+  gem 'rspec-rails',        '2.0.0.beta.5', :git => "git://github.com/rspec/rspec-rails.git"
 
 end
 GEMFILE
