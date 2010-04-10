@@ -22,7 +22,6 @@ end
 CODE
 
 run 'rails generate rspec:install'
-run 'rails generate scaffold Person name:string'
 
 apply 'http://github.com/snusnu/rails-templates/raw/master/spec_helper.rb'
 
@@ -30,8 +29,10 @@ run 'rake spec --trace'
 
 say ''
 say '--------------------------------------------------------------------------'
+say "Edit your Gemfile (don't forget to run 'bundle install' after doing that)"
+say 'Generate a scaffold: rails generate scaffold Person name:string'
+say 'Start the server:    rails server'
+say '--------------------------------------------------------------------------'
 say 'After the sever booted, point your browser at http://localhost:3000/people'
 say '--------------------------------------------------------------------------'
 say ''
-
-run 'rails server'
