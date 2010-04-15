@@ -50,7 +50,7 @@ group(:test) do
   gem 'rspec-core',         '2.0.0.beta.6', :git => "git://github.com/rspec/rspec-core.git",         :require => 'rspec/core'
   gem 'rspec-expectations', '2.0.0.beta.6', :git => "git://github.com/rspec/rspec-expectations.git", :require => 'rspec/expectations'
   gem 'rspec-mocks',        '2.0.0.beta.6', :git => "git://github.com/rspec/rspec-mocks.git",        :require => 'rspec/mocks'
-  gem 'rspec-rails',        '2.0.0.beta.6'  #, :git => "git://github.com/rspec/rspec-rails.git"
+  gem 'rspec-rails',        '2.0.0.beta.6', :git => "git://github.com/rspec/rspec-rails.git"
 
 end
 
