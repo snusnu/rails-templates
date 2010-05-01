@@ -1,5 +1,10 @@
 gsub_file 'config/application.rb', /require 'rails\/all'/ do
 <<-RUBY
+# Workaround a require order problem in dm-migrations
+# This must currently be required *before* the dm-rails/railtie
+# but will be fixed soon
+require 'dm-migrations'
+
 # Pick the frameworks you want:
 require 'action_controller/railtie'
 require 'dm-rails/railtie'
