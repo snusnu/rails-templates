@@ -1,25 +1,32 @@
 # workaround <<-GEMFILE wanting to
 # execute the string subsitution
-datamapper = '#{datamapper}'
+DATAMAPPER = '#{DATAMAPPER}'
+RSPEC      = '#{RSPEC}'
 
 remove_file 'Gemfile'
 create_file 'Gemfile' do
 <<-GEMFILE
 source 'http://rubygems.org'
 
+RAILS_VERSION = '3.0.0.beta3'
+
+DATAMAPPER    = 'git://github.com/datamapper'
+DM_VERSION    = '1.0.0.rc2'
+
+RSPEC         = 'git://github.com/rspec'
+RSPEC_VERSION = '2.0.0.beta.8'
+
 git 'git://github.com/rails/rails.git' do
 
-  gem 'activesupport',      '~> 3.0.0.beta3', :require => 'active_support'
-  gem 'actionpack',         '~> 3.0.0.beta3', :require => 'action_pack'
-  gem 'actionmailer',       '~> 3.0.0.beta3', :require => 'action_mailer'
-  gem 'railties',           '~> 3.0.0.beta3', :require => 'rails'
+  gem 'activesupport',      RAILS_VERSION, :require => 'active_support'
+  gem 'actionpack',         RAILS_VERSION, :require => 'action_pack'
+  gem 'actionmailer',       RAILS_VERSION, :require => 'action_mailer'
+  gem 'railties',           RAILS_VERSION, :require => 'rails'
 
 end
 
-datamapper = 'git://github.com/datamapper'
-
-gem 'dm-rails',             '~> 0.10.2', :git => "#{datamapper}/dm-rails.git"
-gem 'dm-sqlite-adapter',    '~> 0.10.3', :git => "#{datamapper}/dm-sqlite-adapter.git"
+gem 'dm-rails',             DM_VERSION, :git => "#{DATAMAPPER}/dm-rails.git"
+gem 'dm-sqlite-adapter',    DM_VERSION, :git => "#{DATAMAPPER}/dm-sqlite-adapter.git"
 
 # You can use any of the other available database adapters.
 # This is only a small excerpt of the list of all available adapters
@@ -30,27 +37,27 @@ gem 'dm-sqlite-adapter',    '~> 0.10.3', :git => "#{datamapper}/dm-sqlite-adapte
 #
 # for a rather complete list of available datamapper adapters and plugins
 
-# gem 'dm-mysql-adapter',     '~> 0.10.3', :git => "#{datamapper}/dm-mysql-adapter.git"
-# gem 'dm-postgres-adapter',  '~> 0.10.3', :git => "#{datamapper}/dm-postgres-adapter.git"
-# gem 'dm-oracle-adapter',    '~> 0.10.3', :git => "#{datamapper}/dm-oracle-adapter.git"
-# gem 'dm-sqlserver-adapter', '~> 0.10.3', :git => "#{datamapper}/dm-sqlserver-adapter.git"
+# gem 'dm-mysql-adapter',     DM_VERSION, :git => "#{DATAMAPPER}/dm-mysql-adapter.git"
+# gem 'dm-postgres-adapter',  DM_VERSION, :git => "#{DATAMAPPER}/dm-postgres-adapter.git"
+# gem 'dm-oracle-adapter',    DM_VERSION, :git => "#{DATAMAPPER}/dm-oracle-adapter.git"
+# gem 'dm-sqlserver-adapter', DM_VERSION, :git => "#{DATAMAPPER}/dm-sqlserver-adapter.git"
 
-gem 'dm-migrations',        '~> 0.10.3', :git => "#{datamapper}/dm-migrations"
-gem 'dm-types',             '~> 0.10.3', :git => "#{datamapper}/dm-types"
-gem 'dm-validations',       '~> 0.10.3', :git => "#{datamapper}/dm-validations"
-gem 'dm-constraints',       '~> 0.10.3', :git => "#{datamapper}/dm-constraints"
-gem 'dm-transactions',      '~> 0.10.3', :git => "#{datamapper}/dm-transactions.git"
-gem 'dm-aggregates',        '~> 0.10.3', :git => "#{datamapper}/dm-aggregates"
-gem 'dm-timestamps',        '~> 0.10.3', :git => "#{datamapper}/dm-timestamps"
-gem 'dm-observer',          '~> 0.10.3', :git => "#{datamapper}/dm-observer"
+gem 'dm-migrations',        DM_VERSION, :git => "#{DATAMAPPER}/dm-migrations"
+gem 'dm-types',             DM_VERSION, :git => "#{DATAMAPPER}/dm-types"
+gem 'dm-validations',       DM_VERSION, :git => "#{DATAMAPPER}/dm-validations"
+gem 'dm-constraints',       DM_VERSION, :git => "#{DATAMAPPER}/dm-constraints"
+gem 'dm-transactions',      DM_VERSION, :git => "#{DATAMAPPER}/dm-transactions.git"
+gem 'dm-aggregates',        DM_VERSION, :git => "#{DATAMAPPER}/dm-aggregates"
+gem 'dm-timestamps',        DM_VERSION, :git => "#{DATAMAPPER}/dm-timestamps"
+gem 'dm-observer',          DM_VERSION, :git => "#{DATAMAPPER}/dm-observer"
 
 group(:test) do
 
-  gem 'rspec',              '2.0.0.beta.8', :git => "git://github.com/rspec/rspec.git"
-  gem 'rspec-core',         '2.0.0.beta.8', :git => "git://github.com/rspec/rspec-core.git",         :require => 'rspec/core'
-  gem 'rspec-expectations', '2.0.0.beta.8', :git => "git://github.com/rspec/rspec-expectations.git", :require => 'rspec/expectations'
-  gem 'rspec-mocks',        '2.0.0.beta.8', :git => "git://github.com/rspec/rspec-mocks.git",        :require => 'rspec/mocks'
-  gem 'rspec-rails',        '2.0.0.beta.8', :git => "git://github.com/rspec/rspec-rails.git"
+  gem 'rspec',              RSPEC_VERSION, :git => "#{RSPEC}/rspec.git"
+  gem 'rspec-core',         RSPEC_VERSION, :git => "#{RSPEC}/rspec-core.git",         :require => 'rspec/core'
+  gem 'rspec-expectations', RSPEC_VERSION, :git => "#{RSPEC}/rspec-expectations.git", :require => 'rspec/expectations'
+  gem 'rspec-mocks',        RSPEC_VERSION, :git => "#{RSPEC}/rspec-mocks.git",        :require => 'rspec/mocks'
+  gem 'rspec-rails',        RSPEC_VERSION, :git => "#{RSPEC}/rspec-rails.git"
 
 end
 
@@ -63,7 +70,8 @@ end
 # the available dm-xxx-adapters. Once we have stable gems available, pinning these
 # gems to github will be optional.
 
-gem 'dm-core',              '~> 0.10.3', :git => "#{datamapper}/dm-core.git"
-gem 'dm-do-adapter',        '~> 0.10.3', :git => "#{datamapper}/dm-do-adapter"
+gem 'dm-core',              DM_VERSION, :git => "#{DATAMAPPER}/dm-core.git"
+gem 'dm-do-adapter',        DM_VERSION, :git => "#{DATAMAPPER}/dm-do-adapter"
+gem 'dm-active_model',      DM_VERSION, :git => "#{DATAMAPPER}/dm-active_model"
 GEMFILE
 end
