@@ -31,6 +31,7 @@ say ''
 say '--------------------------------------------------------------------------'
 say "Edit your Gemfile (don't forget to run 'bundle install' after doing that)"
 say 'Generate a scaffold: rails generate scaffold Person name:string'
+say 'Automigrate the DB:  rake db:automigrate'
 say 'Start the server:    rails server'
 say '--------------------------------------------------------------------------'
 say 'After the sever booted, point your browser at http://localhost:3000/people'
