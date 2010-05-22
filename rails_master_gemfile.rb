@@ -8,13 +8,13 @@ create_file 'Gemfile' do
 <<-GEMFILE
 source 'http://rubygems.org'
 
-RAILS_VERSION = '3.0.0.beta3'
+RAILS_VERSION = '~> 3.0.0.beta3'
 
 DATAMAPPER    = 'git://github.com/datamapper'
-DM_VERSION    = '1.0.0.rc2'
+DM_VERSION    = '~> 1.0.0.rc2'
 
 RSPEC         = 'git://github.com/rspec'
-RSPEC_VERSION = '2.0.0.beta.8'
+RSPEC_VERSION = '~> 2.0.0.beta.8'
 
 git 'git://github.com/rails/rails.git' do
 
