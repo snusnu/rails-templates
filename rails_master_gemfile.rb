@@ -14,7 +14,7 @@ DATAMAPPER    = 'git://github.com/datamapper'
 DM_VERSION    = '~> 1.0.0.rc2'
 
 RSPEC         = 'git://github.com/rspec'
-RSPEC_VERSION = '~> 2.0.0.beta.8'
+RSPEC_VERSION = '~> 2.0.0.beta.9'
 
 git 'git://github.com/rails/rails.git' do
 
@@ -57,7 +57,7 @@ group(:test) do
   gem 'rspec-core',         RSPEC_VERSION, :git => "#{RSPEC}/rspec-core.git",         :require => 'rspec/core'
   gem 'rspec-expectations', RSPEC_VERSION, :git => "#{RSPEC}/rspec-expectations.git", :require => 'rspec/expectations'
   gem 'rspec-mocks',        RSPEC_VERSION, :git => "#{RSPEC}/rspec-mocks.git",        :require => 'rspec/mocks'
-  gem 'rspec-rails',        RSPEC_VERSION, :git => "#{RSPEC}/rspec-rails.git"
+  gem 'rspec-rails',        '~> 2.0.0.beta.9.1', :git => "#{RSPEC}/rspec-rails.git"
 
 end
 
