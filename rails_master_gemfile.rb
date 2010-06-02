@@ -14,14 +14,10 @@ DM_VERSION    = '~> 1.0.0.rc3'
 
 RSPEC_VERSION = '~> 2.0.0.beta.9'
 
-git 'git://github.com/rails/rails.git' do
-
-  gem 'activesupport',      RAILS_VERSION, :require => 'active_support'
-  gem 'actionpack',         RAILS_VERSION, :require => 'action_pack'
-  gem 'actionmailer',       RAILS_VERSION, :require => 'action_mailer'
-  gem 'railties',           RAILS_VERSION, :require => 'rails'
-
-end
+gem 'activesupport',      RAILS_VERSION, :require => 'active_support'
+gem 'actionpack',         RAILS_VERSION, :require => 'action_pack'
+gem 'actionmailer',       RAILS_VERSION, :require => 'action_mailer'
+gem 'railties',           RAILS_VERSION, :require => 'rails'
 
 gem 'dm-rails',             DM_VERSION
 gem 'dm-sqlite-adapter',    DM_VERSION
