@@ -26,8 +26,8 @@ gem 'dm-sqlite-adapter',    DM_VERSION
 # This is only a small excerpt of the list of all available adapters
 # Have a look at
 #
-#  http://wiki.github.com/datamapper/dm-core/adapters
-#  http://wiki.github.com/datamapper/dm-core/community-plugins
+#  https://wiki.github.com/datamapper/dm-core/adapters
+#  https://wiki.github.com/datamapper/dm-core/community-plugins
 #
 # for a rather complete list of available datamapper adapters and plugins
 

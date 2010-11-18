@@ -1,7 +1,7 @@
 # This needs to be called after one of the gemfile templates
 
-apply 'http://github.com/snusnu/rails-templates/raw/master/rails_application_config.rb'
-apply 'http://github.com/snusnu/rails-templates/raw/master/database.yml.rb'
+apply 'https://github.com/snusnu/rails-templates/raw/master/rails_application_config.rb'
+apply 'https://github.com/snusnu/rails-templates/raw/master/database.yml.rb'
 
 run 'bundle install'
 
@@ -23,7 +23,7 @@ CODE
 
 run 'rails generate rspec:install'
 
-apply 'http://github.com/snusnu/rails-templates/raw/master/spec_helper.rb'
+apply 'https://github.com/snusnu/rails-templates/raw/master/spec_helper.rb'
 
 run 'rake spec --trace'
 

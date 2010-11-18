@@ -4,7 +4,7 @@ This is a collection of rails application templates that are designed to get a r
 
 If you have rails3 installed on your system, creating a datamapper app on rails3 is as easy as issuing one command.
 
-  rails dm_rails3_app -m http://github.com/snusnu/rails-templates/raw/master/dm_rails_master.rb
+  rails dm_rails3_app -m https://github.com/snusnu/rails-templates/raw/master/dm_rails_master.rb
 
 If you don't have rails3 installed, the following should get you going.
 
@@ -15,7 +15,7 @@ That's it. Have fun!
 
 == rspec support
 
-Currently, {rspec-rails}[http:github.com/rspec/rspec-rails] isn't yet fully compatible with rails3 and not yet completely ORM agnostic. Preliminary support is available though.
+Currently, {rspec-rails}[https:github.com/rspec/rspec-rails] isn't yet fully compatible with rails3 and not yet completely ORM agnostic. Preliminary support is available though.
 
 == Developing and testing rails-templates
 
@@ -45,4 +45,4 @@ The sinatra service simply replaces the github URLs with local ones, thus allowi
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-Copyright (c) 2010 Martin Gamsjaeger (snusnu). See {LICENSE}[http://github.com/snusnu/rails-templates/blob/master/LICENSE] for details.
+Copyright (c) 2010 Martin Gamsjaeger (snusnu). See {LICENSE}[https://github.com/snusnu/rails-templates/blob/master/LICENSE] for details.
